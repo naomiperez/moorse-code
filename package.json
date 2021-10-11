@@ -1,0 +1,26 @@
+{
+  "name": "moorse-code",
+  "version": "1.0.0",
+  "description": "A Moorse Code encoder and decoder.",
+  "main": "cli.js",
+  "scripts": {
+    "test": "test"
+  },
+  "bin": {
+    "test-cli-tool": "cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naomiperez/moorse-code.git"
+  },
+  "keywords": [
+    "morse",
+    "moorse"
+  ],
+  "author": "Naomi Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naomiperez/moorse-code/issues"
+  },
+  "homepage": "https://github.com/naomiperez/moorse-code#readme"
+}
