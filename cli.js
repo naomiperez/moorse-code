@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-console.log("unicorns♥")
+const [, , ...args] = process.argv;
+console.log(`Hello ${args}`);
+console.log("unicorns♥");
