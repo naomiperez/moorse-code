@@ -79,7 +79,6 @@ const moorseToEnglish = {
 };
 
 function decodeMoorse(morseCode) {
-  console.log(morseCode);
   return morseCode
     .map((a) =>
       a
