@@ -7,7 +7,7 @@ const englishToMoorse = {
   d: "mooo moo moo ♥",
   e: "moo ♥",
   f: "moo moo mooo moo ♥",
-  g: "mooo mooo ♥",
+  g: "mooo mooo moo ♥",
   h: "moo moo moo moo ♥",
   i: "moo moo ♥",
   j: "moo mooo mooo mooo ♥",
@@ -44,9 +44,9 @@ const moorseToEnglish = {
   "mooo moo moo moo": "b",
   "mooo moo mooo moo": "c",
   "mooo moo moo": "d",
-  moo: "e",
+  "moo": "e",
   "moo moo mooo moo": "f",
-  "mooo mooo": "g",
+  "mooo mooo moo": "g",
   "moo moo moo moo": "h",
   "moo moo": "i",
   "moo mooo mooo mooo": "j",
@@ -59,7 +59,7 @@ const moorseToEnglish = {
   "mooo mooo moo mooo": "q",
   "moo mooo moo": "r",
   "moo moo moo": "s",
-  mooo: "t",
+  "mooo": "t",
   "moo moo mooo": "u",
   "moo moo moo mooo": "v",
   "moo mooo mooo": "w",
@@ -110,7 +110,7 @@ function encodeMoorse(englishStr) {
 const [, , ...args] = process.argv;
 
 if (args[0] === "dec") {
-  console.log(decodeMoorse(args.splice(1).splice(1)));
+  console.log(decodeMoorse(args.splice(1)));
 } else if(args[0] === "help") {
     console.log("♥ To encode morse, input your English string as argument. \n♥ To decode morse, input \"dec\" as the first argument, and the moorse string surrounded by quotes as the second argument.")
 }
