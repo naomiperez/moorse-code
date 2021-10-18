@@ -110,7 +110,7 @@ function encodeMoorse(englishStr) {
 const [, , ...args] = process.argv;
 
 if (args[0] === "dec") {
-  console.log(decodeMoorse(args.splice(2)));
+  console.log(decodeMoorse(args.splice(1).splice(1)));
 } else if(args[0] === "help") {
     console.log("♥ To encode morse, input your English string as argument. \n♥ To decode morse, input \"dec\" as the first argument, and the moorse string surrounded by quotes as the second argument.")
 }
